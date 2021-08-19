@@ -1,0 +1,11 @@
+name: exql
+dependencies:
+- python==3.8
+- pip==21.1.2
+- matplotlib==3.4.2
+- scikit-learn==0.24.2
+- pip:
+  - numpy==1.21.1
+  - tableauhyperapi==0.0.13287
+  - postgres==3.0.0
+  - psycopg2==2.9.1
