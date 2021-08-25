@@ -12,7 +12,7 @@
 │   ├── conditions             # Implementation of conditions
 │   ├── errors                 # Catching and handling errors
 │   ├── loops                  # Implementation of loops
-│   ├── procedures             # Using procedures
+│   ├── functions              # Using functions
 └── └── variables              # Variable declaration and usage
 ````
 

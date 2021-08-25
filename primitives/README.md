@@ -4,7 +4,7 @@
 ## Primitives
 This folder contains different sub-folders with the primitives from chapter 3 of the publication. 
 
-Each sub-folder `conditions, errors, loops, procedures` and `variables` contains a Python file and 
+Each sub-folder `conditions, errors, loops, functions` and `variables` contains a Python file and 
 a corresponding SQL file with the same operation performed as in the Python file. 
 
 ## Requirements

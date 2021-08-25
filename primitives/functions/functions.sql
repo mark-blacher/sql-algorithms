@@ -1,4 +1,4 @@
--- SQL code using procedures
+-- SQL code using functions
 
 WITH params(temperature) AS (
     VALUES (300::float), (170)

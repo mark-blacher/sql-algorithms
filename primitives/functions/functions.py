@@ -1,4 +1,4 @@
-# Python code using procedures
+# Python code using functions
 
 if __name__ == "__main__":
     def kelvin_to_celsius(temperature):
