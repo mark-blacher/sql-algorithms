@@ -1,10 +1,10 @@
 -- noinspection SqlNoDataSourceInspectionForFile
 
--- - this file contains a gradient descend implementation
+-- - this file contains a gradient descent implementation
 --   for l2-regularized logistic regression in PostgreSQL dialect
 -- - algorithmically, this SQL implementation corresponds to the
---   Python version from demo_gradient_descend.py
--- - refer to demo_gradient_descend.py for details
+--   Python version from demo_gradient_descent.py
+-- - refer to demo_gradient_descent.py for details
 
 -- - this SQL programming style does not require explicit indices for
 --   vectors and matrices
@@ -12,7 +12,7 @@
 -- - a column in the relation represents either an independent vector
 --   or a vector of a matrix
 -- - this programming style depends on column names and is therefore
---   less universal than the COO form of demo_gradient_descend.sql
+--   less universal than the COO form of demo_gradient_descent.sql
 -- - but, in terms of speed and memory consumption, this representation
 --   (without explicit indices) is superior to the COO form
 WITH RECURSIVE log_reg(i, {weights}, intercept) AS (
