@@ -11,7 +11,7 @@ See [requirements](../../README.md#Requirements) of the whole repository.
 The repository contains multiple files, that all can run stand alone. 
 You can run the Python file with 
 ````commandline
-python demo_gradient_descend.py
+python demo_gradient_descent.py
 
     seconds: 0.0012402534484863281
     w: [ 1.38182256 -2.34118793 -0.23206473]
@@ -19,7 +19,7 @@ python demo_gradient_descend.py
 ````
 and the SQL files using 
 ````commandline
-psql postgres -h 127.0.0.1 -d postgres -f demo_gradient_descend.sql
+psql postgres -h 127.0.0.1 -d postgres -f demo_gradient_descent.sql
 
       result   |                            values
     -----------+--------------------------------------------------------------
@@ -30,7 +30,7 @@ psql postgres -h 127.0.0.1 -d postgres -f demo_gradient_descend.sql
 or for the data base friendly case
 
 ```sql
-psql postgres -h 127.0.0.1 -d postgres -f demo_gradient_descend_db-friendly.sql
+psql postgres -h 127.0.0.1 -d postgres -f demo_gradient_descent_db-friendly.sql
 
       result   |                            values
     -----------+--------------------------------------------------------------
