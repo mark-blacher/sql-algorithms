@@ -1,8 +1,8 @@
--- - this file contains a gradient descend implementation 
+-- - this file contains a gradient descent implementation 
 --   for l2-regularized logistic regression in PostgreSQL dialect
 -- - algorithmically, this SQL implementation corresponds to the 
---   Python version from demo_gradient_descend.py
--- - refer to demo_gradient_descend.py for details
+--   Python version from demo_gradient_descent.py
+-- - refer to demo_gradient_descent.py for details
 
 -- - this SQL programming style represents vectors, 
 --   matrices with explicit indices i and j (i=row, j=column)
