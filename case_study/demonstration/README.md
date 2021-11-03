@@ -1,4 +1,4 @@
-# Supplement for the publication - Machine Learning, Linear Algebra and More: SQL Is All You Need
+# Supplement for the publication - Machine Learning, Linear Algebra, and More: Is SQL All You Need?
 
 
 ## Demonstratation
