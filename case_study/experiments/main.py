@@ -204,7 +204,7 @@ def get_gradient_descent_query(COO=True, parameter=None):
     regularization = parameter.get('regularization', 2)
     step_width = parameter.get('step_width', 0.001)
     if COO:
-        with open(os.path.join('queries', f'demo_gradient_descend_COO.sql')) as f:
+        with open(os.path.join('queries', f'demo_gradient_descent_COO.sql')) as f:
             query = f.read().format(
                 iterations=iterations,
                 regularization=regularization,
@@ -229,7 +229,7 @@ def get_gradient_descent_query(COO=True, parameter=None):
         weight_comma_text = "||".join([f"w{i + 1}::text||','" for i in range(n_features)])
 
         # load the file and replace everything specific for the model
-        with open(os.path.join('queries', f'demo_gradient_descend_db-friendly.sql')) as f:
+        with open(os.path.join('queries', f'demo_gradient_descent_db-friendly.sql')) as f:
             query = f.read().format(
                 iterations=iterations,
                 weights=weights,
@@ -410,7 +410,7 @@ def numpy(X, y, iterations, parameter):
         return w - c * X.T.dot(cse * y / (1 + cse))
 
     # batch gradient descent
-    def gradiet_descend(X, y, c, iterations):
+    def gradient_descent(X, y, c, iterations):
         # initialize weights
         w = np.zeros(X.shape[1])
         alpha = step_width  # learning rate
@@ -427,11 +427,11 @@ def numpy(X, y, iterations, parameter):
 
     # burnin
     for _ in range(iterations):
-        w = list(gradiet_descend(X, y, c=regularization, iterations=iters))
+        w = list(gradient_descent(X, y, c=regularization, iterations=iters))
         a = sum(abs(predict(X, w) == y)) / len(X)
     tic = timer()
     for _ in range(iterations):
-        w = list(gradiet_descend(X, y, c=regularization, iterations=iters))
+        w = list(gradient_descent(X, y, c=regularization, iterations=iters))
         a = sum(abs(predict(X, w) == y)) / len(X)
     toc = timer()
 
