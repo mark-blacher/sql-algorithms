@@ -1,4 +1,4 @@
-# Supplement for the paper - Machine Learning, Linear Algebra and More: SQL Is All You Need
+# Supplement for the paper - Machine Learning, Linear Algebra, and More: Is SQL All You Need?
 
 ## Structure of the Repository
 
