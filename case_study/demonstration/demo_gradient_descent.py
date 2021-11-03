@@ -1,7 +1,7 @@
 import numpy as np
 import time
 
-# this file contains a gradient descend implementation 
+# this file contains a gradient descent implementation 
 # for l2-regularized logistic regression in Python
 
 # - the first 100 samples from the iris dataset,
@@ -144,7 +144,7 @@ def gradient(X, c, w, y):
 
 
 # batch gradient descent
-def gradient_descend(X, y, c, iterations):
+def gradient_descent(X, y, c, iterations):
   # initialize weights
   w = np.zeros(X.shape[1])
   alpha = 0.001  # learning rate
@@ -163,7 +163,7 @@ def predict(X, w):
 
 if __name__ == "__main__":
   tic = time.time()
-  w = gradient_descend(X, y, c=2, iterations=100)
+  w = gradient_descent(X, y, c=2, iterations=100)
   print("seconds:", time.time() - tic)
   print("w:", w)
   y_predicted = predict(X, w)
