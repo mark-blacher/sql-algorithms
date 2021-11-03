@@ -1,4 +1,4 @@
-# Experiments for the CIDIR2021 publication - SQL is all you need
+# Supplement for the publication - Machine Learning, Linear Algebra, and More: Is SQL All You Need?
 
 ## Requirements
 ### Python and Anaconda
