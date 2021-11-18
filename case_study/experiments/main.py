@@ -599,7 +599,7 @@ if __name__ == "__main__":
         runtime, wn, an = numpy(X, y, args.iterations, parameter)
         print("numpy", runtime)
 
-        assert np.allclose(wn, wh) and np.allclose(wh, whc) and np.allclose(wp, wpc) and np.allclose(wn, wp), \
+        assert np.allclose(wn, wh) and np.allclose(wh, whc) and np.allclose(wh, wpc),\
             f"Numerical issue with {args.features} features and {args.samples} data points. Weight vectors are not aligned."
 
 
