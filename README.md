@@ -52,7 +52,7 @@ The postgres installation should have a
 database with the following configuaration:
 * name: 'postgres',
 * user: 'postgres',
-* password: 'postgres',
+* password: 'pw',
 * host: 'localhost'.
 
 
