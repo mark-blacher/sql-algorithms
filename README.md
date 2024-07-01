@@ -8,6 +8,7 @@
 ├── case_study                 # Case study and experiments for the paper using logistic regression
 │   ├── demonstration          # Stand alone files for logistic regression
 │   └── experiments            # Experimental files to reproduce the results of the paper
+├── more_algorithmic_examples  # additional SQL-only algorithms not mentioned in the paper
 ├── primitives                 # Stand alone files for the primitives of chapter 3 
 │   ├── conditions             # Implementation of conditions
 │   ├── errors                 # Catching and handling errors
